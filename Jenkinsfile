@@ -1,7 +1,7 @@
 pipeline {
   agent { node { label 'master' } }
   parameters {
-    booleanParam(name: 'DEPLOYS', defaultValue: false, description: 'Use this build for deployment.')
+    booleanParam(name: 'DEPLOYS', defaultValue: false, description: 'Proceed for Deployment?.')
  }
   triggers {
     pollSCM('H/10 * * * * ')
