@@ -1,5 +1,5 @@
 pipeline {
-  agent { node { label 'IFM-ANSIBLE-MASTER' } }
+  agent { node { label 'master' } }
   parameters {
     booleanParam(name: 'DEPLOYS', defaultValue: false, description: 'Use this build for deployment.')
  }
